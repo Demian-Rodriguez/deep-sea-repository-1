@@ -1,0 +1,47 @@
+/*Footer*/
+.footer {
+    @include size(100vw, fit-content);
+    bottom: 0;
+    background-image: radial-gradient(circle at 43.84% -20.44%, #8bffff 0, #7dfff9 16.67%, #73f3eb 33.33%, #6cd8d8 50%, #68bdc3 66.67%, #64a7af 83.33%, #61939d 100%);
+
+    .footer__nav {
+        overflow: hidden;
+        padding: 0.5rem;
+        @include size(fit-content, fit-content);
+        font-size: medium;
+    }
+    a:link, a:visited {
+        color: black;
+        text-decoration: none; 
+    }
+}
+
+/*Responsive*/
+@media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) {
+    .footer {
+        @include size(100vw, fit-content);
+    }    
+}
+@media only screen and (min-device-width: 475px) and (max-device-width: 812px) {
+    .footer {
+        @include size(100vw, fit-content);
+        .footer__nav {
+            overflow: hidden;
+            padding: 0.5rem;
+            @include size(fit-content, fit-content);
+            font-size: small;
+        }
+    }   
+}    
+
+@media only screen and (min-device-width: 360px) and (max-device-width: 470px) {
+    .footer {
+        @include size(100vw, fit-content);
+        .footer__nav {
+            overflow: hidden;
+            padding: 0.5rem;
+            @include size(fit-content, fit-content);
+            font-size: 0.6em;
+        }
+    }   
+}    

@@ -1,0 +1,143 @@
+/*Manga*/
+.main-manga {
+    @include size(100vw, fit-content);
+    @include flex(column, center, center, wrap);
+    background-color: $main-color; 
+
+    .fondo-listas {
+        display: flex;
+        margin-left: 5rem;
+        
+        .listas {
+            @include size(20vw, 35vh);
+            @include font('Lucida Sans', 1.5em, bold);
+            @include border(5rem, 1rem);
+            background: radial-gradient(ellipse at center, #cedce7 0%, #596a72 100%);
+            padding-left: 2rem;
+
+            h3 {
+                font-size: 2em;
+                text-decoration: underline;
+                text-align: center; 
+            }
+        }
+    }
+
+    .disclaimer__text {
+        @include size(70vw, 17vh);
+        @include font(cursive, 2em, lighter);
+        @include border(2rem, 1rem);
+        justify-content: center;
+        background: linear-gradient(to bottom, #d8e0de 0%, #aebfbc 14%, #8ea6a2 36%, #829d98 74%, #4c6663 100%);
+        text-align: justify;
+        line-height: 2rem;
+        word-spacing: 1em;
+    }
+}
+
+/*Responsive*/
+@media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) {
+    .main-manga {
+        flex-wrap: nowrap;
+
+        .fondo-listas {
+            margin-left: 0rem;
+            margin-right: 2.5rem;
+            
+            .listas {
+                @include size(fit-content, fit-content);
+                @include border(1.5rem, 1rem);
+    
+                h3 {
+                    font-size: 1.5em;
+                    text-decoration: underline;
+                    text-align: center; 
+                }
+            }
+        }
+    
+        .disclaimer__text {
+            @include size(fit-content, fit-content);
+            @include font(cursive, 2em, lighter);
+            @include border(2rem, 1rem);
+            line-height: 1.8rem;
+            word-spacing: 1em; 
+        }
+    }    
+}
+
+@media only screen and (min-device-width: 475px) and (max-device-width: 812px) {
+    .main-manga {
+        @include size(100vw, fit-content);
+        flex-wrap: nowrap;
+
+        .fondo-listas {
+            margin-left: 0rem;
+            
+            .listas {
+                @include size(fit-content, fit-content);
+                @include border(0.5rem, 1rem);
+    
+                h3 {
+                    font-size: 1.5em;
+                    text-decoration: underline;
+                    text-align: center; 
+                }
+
+                li{
+                    font-size: 0.9em;
+                }
+            }
+        }
+    
+        .disclaimer__text {
+            @include size(fit-content, fit-content);
+            @include font(cursive, 1.5em, lighter);
+            @include border(2rem, 1rem);
+            line-height: 1.2rem;
+            word-spacing: 0.4em; 
+        }
+        
+    }    
+}
+
+@media only screen and (min-device-width: 360px) and (max-device-width: 470px) {
+    .main-manga {
+        @include size(100vw, fit-content);
+        flex-wrap: nowrap;
+
+        h2 {
+            font-size: 3em;
+            padding-top: 0rem;
+            margin-top: 0rem;
+        }
+
+        .fondo-listas {
+            margin-left: 0rem;
+            
+            .listas {
+                @include size(fit-content, fit-content);
+                @include border(0.5rem, 1rem);
+    
+                h3 {
+                    font-size: 1em;
+                    text-decoration: underline;
+                    text-align: center; 
+                }
+
+                li{
+                    font-size: 0.5em;
+                }
+            }
+        }
+    
+        .disclaimer__text {
+            @include size(fit-content, fit-content);
+            @include font(cursive, 1em, lighter);
+            @include border(1rem, 1rem);
+            line-height: 1.2rem;
+            word-spacing: 0.4em; 
+        }
+        
+    }    
+}

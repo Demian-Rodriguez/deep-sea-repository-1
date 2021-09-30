@@ -1,0 +1,25 @@
+/*Imports*/
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap');
+
+/*Variables*/
+@import "./utils/variables";
+
+/*Globals*/
+@import "./utils/mixins";
+@import "./SCSS/globals";
+
+
+/*Partials*/
+@import "./partials/header";
+@import "./partials/footer";
+
+
+
+/*Pages*/
+@import "./pages/home";
+@import "./pages/comics";
+@import "./pages/contacto";
+@import "./pages/manga";
+@import "./pages/pedidos";
+
+

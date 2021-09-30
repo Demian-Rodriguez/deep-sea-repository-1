@@ -1,0 +1,23 @@
+@mixin flex ($direction, $align, $justify, $wrap) {
+    display: flex;
+    flex-direction: $direction;
+    align-items: $align;
+    justify-content: $justify;
+    flex-wrap: $wrap;
+}
+
+@mixin font ($family, $size, $weight) {
+    font-family: $family;
+    font-size: $size;
+    font-weight: $weight;
+}
+
+@mixin size ($width, $height) {
+    width: $width;
+    height: $height;
+}
+
+@mixin border($margin, $padding) {
+    margin: $margin;
+    padding: $padding;
+}

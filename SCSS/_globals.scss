@@ -1,0 +1,26 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none; 
+}
+
+
+h2 {
+    font-size: 2em; 
+}
+
+.pages {
+    display: block;
+    font-size: 4em;
+    margin: 2rem 50rem;
+    margin-top: 0;
+    padding-top: 2rem;
+    text-align: center;
+    border-bottom: 3px solid cadetblue;
+    width: fit-content;
+    height: fit-content; 
+}

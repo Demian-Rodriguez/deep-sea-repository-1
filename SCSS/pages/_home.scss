@@ -1,0 +1,225 @@
+/*Home*/
+.main {
+    background-color: $main-color;
+    @include size(100vw, auto);
+    @include flex(column, center, center,wrap);
+    
+    .container-new {
+        @include size(50vw, 30vh);
+        @include border(2rem, 1rem);
+        background-color: darkgray;
+        text-align: center;
+        text-decoration: underline;
+        justify-content: center;
+        overflow: hidden; 
+
+        img {
+            @include size(fit-content, 20vh);
+            margin: 1rem;
+        }
+    }
+    
+    .comics {
+        @include size(20vw, 30vh);
+        @include border(3rem, 0rem);
+        @include font($my-font, 2.5em, bolder);
+        border: 1px solid black;
+        text-align: center;
+        text-decoration: underline;
+        display: inline-block;
+        flex-direction: row;
+        margin-bottom: 2rem;
+        transform: skewY(-5deg);
+        
+        .img-thumbnail {
+            @include size(20vw, 30vh); 
+        }
+    }
+    
+    .manga {
+        @extend .comics;
+        transform: skewY(5deg);
+        
+        .img-thumbnail {
+            @include size(20vw, 30vh); 
+        }
+    }
+    
+    .container {
+        @include size(40vw, 20vh);
+        display: block;
+        background-color: darkgray;
+        text-align: left;
+        margin-top: 5rem;
+        padding-bottom: 2rem;
+        margin-bottom: 2rem;
+    }
+
+    .carousel {
+        @include size(30vw, 35vh);
+        @include border(2rem, 2rem);
+        background-color:rgb(223, 217, 217);
+        text-align: center; 
+        overflow: hidden;
+
+        .d-block {
+            height: fit-content;
+            width: fit-content;
+        }
+    }    
+}
+
+/*Responsive*/
+@media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) {
+    .main {
+        flex-wrap: nowrap;
+        
+        .container-new {
+            @include size(60vw, 25vh);
+
+            img {
+                @include size(fit-content, 15vh);
+                margin: 1rem;
+            }
+        }
+
+        .manga {
+            @include size(20vw, 15vh);
+        }
+
+        .comics {
+            @include size(20vw, 20vh);
+        }
+
+        .recommendations {
+        @include size(50vw, 15vh); 
+        }
+
+        .top-sellers {
+            @include size(50vw, 15vh);
+            padding: 0;
+        }
+
+        .carousel {
+            @include size(40vw, 35vh);
+
+            .d-block {
+                @include size(20vw, 20vh); 
+            }
+        }
+
+        h2 {
+            font-size: 1.5em; 
+        } 
+    }
+}
+
+@media only screen and (min-device-width: 475px) and (max-device-width: 812px) {
+    .main {
+        flex-wrap: nowrap;
+        
+        .container-new {
+            @include size(80vw, 20vh);
+
+            img {
+                @include size(fit-content, 10vh);
+                margin: 1rem;
+            }
+        }
+    
+        .manga {
+            @include size(30vw, 15vh);
+            margin: 0;
+            margin-top: 4rem;
+            margin-left: 2rem; 
+
+            .img-thumbnail {
+                @include size(30vw, 15vh); 
+            }
+        }
+    
+        .comics {
+            @include size(30vw, 15vh);
+            margin: 0;
+            margin-top: 4rem; 
+
+            .img-thumbnail {
+                @include size(30vw, 15vh); 
+            }
+        }
+
+        .carousel {
+            @include size(50vw, 22vh);
+
+            .d-block {
+                @include size(20vw, 13vh);
+            }
+        }
+
+        h2 {
+            font-size: 1.2em; 
+        } 
+    }
+}    
+
+@media only screen and (min-device-width: 360px) and (max-device-width: 470px) {
+    .main {
+        flex-wrap: nowrap;
+        
+        .container-new {
+            @include size(80vw, 20vh);
+
+            img {
+                @include size(fit-content, 8vh);
+                margin: 1rem;
+            }
+
+            h2 {
+                font-size: 1em;
+                padding-bottom: 1rem; 
+            } 
+        }
+    
+        .manga {
+            @include size(35vw, 15vh);
+            margin: 0;
+            margin-top: 4rem;
+            margin-left: 2rem; 
+
+            .img-thumbnail {
+                @include size(35vw, 15vh); 
+            }
+
+            h2 {
+                font-size: 1em; 
+            } 
+        }
+    
+        .comics {
+            @include size(35vw, 15vh);
+            margin: 0;
+            margin-top: 4rem; 
+
+            .img-thumbnail {
+                @include size(35vw, 15vh); 
+            }
+
+            h2 {
+                font-size: 1em; 
+            } 
+        }
+
+        .carousel {
+            @include size(60vw, 20vh);
+
+            .d-block {
+                @include size(20vw, 10vh);
+            }
+
+            h2 {
+                font-size: 1em; 
+                padding-bottom: 1rem;
+            } 
+        }
+    }
+}    

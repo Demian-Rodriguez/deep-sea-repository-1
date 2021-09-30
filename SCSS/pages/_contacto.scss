@@ -1,0 +1,183 @@
+/*Contacto*/
+.main-contacto {
+    @include size(100vw, fit-content);
+    @include flex(column, center, center, nowrap);
+    background-color: $main-color; 
+
+    .contacto {
+        @include border(3rem, 2rem);
+        justify-content: center;
+        border: solid 3px $my-color2;
+        background-color: grey; 
+
+        .contacto__input[type=text] {
+            @include border(1.5rem, 0.5rem);
+            width: 25vw;
+            box-sizing: border-box;
+            display: block; 
+        }
+
+        .contacto__input[type=email] {
+            @include border(1rem, 1rem);
+        }
+
+        .contacto__message {
+            @include size(20vw, 25vh);
+            @include border(2rem, 1rem);
+            box-sizing: border-box;
+            background-color: #f8f8f8;
+            resize: none;
+            display: block; 
+        }
+
+        .contacto__input[type=submit] {
+            @include border(1rem, 1.5rem);
+            background-color: $my-color2;
+            border: none;
+            color: rgb(43, 40, 40);
+            margin-left: 4rem;
+            cursor: pointer;
+            font-size: 1.5em; 
+        }
+
+
+        .contacto__input[type=reset] {
+            @extend .contacto__input[type=submit]
+        }
+
+        .contacto__option {
+            margin: 2rem;
+        }
+        
+        .contacto__label[for=users] {
+            margin: 1rem; 
+        }
+
+        .contacto__label[for=new] {
+            margin: 1rem; 
+        }
+        
+    }
+}
+
+
+/*Responsive*/
+@media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) {
+    .main-contacto {
+        flex-wrap: nowrap;
+        overflow: hidden;
+
+        .contacto {
+            @include size(fit-content, fit-content);
+    
+            .contacto__input[type=text] {
+                @include border(1.5rem, 0.5rem);
+                width: 40vw;
+            }
+    
+            .contacto__input[type=email] {
+                @include border(1rem, 1rem);
+            }
+    
+            .contacto__message {
+                @include size(40vw, 25vh);
+                @include border(2rem, 1rem);
+            }
+    
+            .contacto__input[type=submit] {
+                @include border(1rem, 1.5rem);
+                margin-left: 4rem;
+                font-size: 1.5em; 
+            }
+    
+    
+            .contacto__input[type=reset] {
+                @include border(1rem, 1.5rem);
+                margin-left: 4rem;
+                font-size: 1.5em; 
+            }
+
+            .contacto__option {
+                width: 5vw;
+            }
+        }    
+    }
+}
+
+@media only screen and (min-device-width: 475px) and (max-device-width: 812px) {
+    .main-contacto {
+        @include size(100vw, fit-content);
+        flex-wrap: nowrap;
+
+        .contacto {
+            @include size(fit-content, fit-content);
+    
+            .contacto__input[type=text] {
+                width: 60vw;
+            }
+    
+            .contacto__input[type=email] {
+                width: 70vw;
+            }
+    
+            .contacto__message {
+                @include size(60vw, 30vh);
+            }
+    
+            .contacto__input[type=submit] {
+                width: 30vw;
+            }
+    
+            .contacto__option {
+                width: 15vw;
+            }
+        }
+    }
+}
+
+@media only screen and (min-device-width: 360px) and (max-device-width: 470px) {
+    .main-contacto {
+        @include size(100vw, fit-content);
+        flex-wrap: nowrap;
+
+        h2 {
+            font-size: 3em;
+        }
+
+        .contacto {
+            @include size(fit-content, fit-content);
+    
+            .contacto__input[type=text] {
+                width: 50vw;
+                height: 3vh;
+            }
+    
+            .contacto__input[type=email] {
+                width: 60vw;
+                height: 3vh;
+            }
+
+            .contacto__label[for=users] {
+                margin: 0.5rem; 
+            }
+    
+            .contacto__label[for=new] {
+                margin: 0.5rem; 
+            }
+    
+            .contacto__message {
+                @include size(50vw, 15vh);
+            }
+    
+            .contacto__input[type=submit] {
+                @include border( 1rem, 1rem);
+                width: 20vw;
+                font-size: 0.9em;
+            }
+    
+            .contacto__option {
+                width: 15vw;
+            }
+        }
+    }
+}

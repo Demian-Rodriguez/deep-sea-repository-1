@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="CÓMICS, MANGA , CONTACTO, ENCARGOS, NACIONAL, INTERNACIONAL, STOCK, CONSULTAS">
+    <title>Deep Sea Cómics & Manga - Contactanos</title>
+    <meta name="description" content="Deep Sea Comics & Manga, preguntas y encargos">
+    <link rel="icon" href="../Multimedia/Logo.svg"/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" 
+    integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <link rel="stylesheet" href="../CSS/animate.css">
+    <link rel="stylesheet" href="../CSS/index.css">
+</head>
+<body>
+    <!--Inicio Header-->
+    <header>
+        <nav class="navegador">
+            <picture class="navegador__logo">
+                <a href="../index.html"><img class="animate__animated animate__fadeInDown" src="../Multimedia/Logo.svg" alt="logo-deep-sea"></a>    
+            </picture>
+            <ul class="menu">
+                <li class="menu__item"><a href="../index.html">Home</a></li>
+                <li class="menu__item">Productos
+                    <ul class="submenu">
+                        <li class="submenu__item"> <a href="manga.html">Manga</a></li>
+                        <li class="submenu__item"> <a href="comics.html">Comics</a></li>
+                    </ul>
+                </li>
+                <li class="menu__item"><a href="pedidos.html">Pedidos</a></li>
+                <li class="menu__item"><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!--Fin Header-->
+    <!--Inicio Main Contacto-->
+    <main class="main-contacto">
+        <h2 class="pages">Contacto</h2>
+        <form class="contacto" action="indez.js" method="POST">
+            <div>
+                <label class="contacto__label" for="first-name">Nombre</label>
+                <input class="contacto__input" type="text" name="first-name">
+                <label class="contacto__label" for="last-name">Apellido</label>
+                <input class="contacto__input" type="text" name="last-name">
+                <label class="contacto__label" for="email">email</label>
+                <input class="contacto__input" type="email" name="email">
+                <input class="contacto__input" type="checkbox" name="cliente-regular">
+                <label class="contacto__label" for="users">Cliente Regular</label>
+                <input type="checkbox" name="nuevo-cliente">
+                <label class="contacto__label" for="new">Nuevo Cliente</label>
+            </div>
+            <div>
+                <label class="contacto__label" for="graphic-novel">Choose:</label>
+                <select class="contacto__option" name="manga-or-comics" id="graphic-novel" size="2" multiple>
+                    <option value="manga">Manga</option>
+                    <option value="comic">Comic</option>
+                </select>
+                <textarea name="message" class="contacto__message" id="message" cols="30" rows="10"></textarea>
+            </div>
+            <div>
+                <input class="contacto__input" type="submit" value="send">
+                <input class="contacto__input" type="reset" value="reset">
+            </div>
+        </form>
+    </main>
+    <!--Fin Main Contacto-->
+    <!--Inicio Footer-->
+    <footer class="footer">
+        <div>
+            <h4 class="footer__nav"><a href="manga.html">Manga</a></h4>
+            <h4 class="footer__nav"><a href="comics.html">Comics</a></h4>
+            <h4 class="footer__nav"><a href="pedidos.html">Pedidos</a></h4>
+            <h4 class="footer__nav"><a href="contacto.html">Contacto</a></h4>
+        </div>
+    </footer>
+    <!--Fin Footer-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" 
+    integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+</body>
+</html>

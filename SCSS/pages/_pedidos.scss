@@ -1,0 +1,103 @@
+/*Pedidos*/
+.main-pedidos {
+    background-color: $main-color;
+    @include size(100vw, fit-content);
+    @include flex(column, center, center, nowrap);
+
+    .pages-pedidos {
+        @include flex(column, center, center,wrap);
+        @include size(fit-content, fit-content);
+        font-size: 4em;
+        text-align: center;
+        border-bottom: 3px solid cadetblue;
+        margin-top: 9rem
+    }
+
+    .table {
+        @include font (sans-serif, 2em, lighter);
+        border: solid black;
+        padding: 1rem;
+        margin-top: 2rem;
+        text-align: center;
+        background-color: grey;
+        align-items: center;
+
+
+        .table-active {
+            font-weight: bold; }
+    }
+
+    .nuevos-tomos {
+        margin: 3rem; 
+    }
+}
+
+/*Responsive*/
+@media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) {
+    .main-pedidos {
+        @include size(100vw, fit-content);
+        flex-wrap: nowrap;
+
+        .pages-pedidos {
+            margin-top: 2rem;
+            font-size: 3em;
+        }
+
+        .table {
+            @include size (50vw, 20vh);
+            font-size: 1.5em;
+        }
+    
+        iframe {
+            @include size(70vw, 50vh);
+            margin: 2rem; 
+            margin-bottom: 2rem;
+        }   
+    }    
+}
+
+@media only screen and (min-device-width: 475px) and (max-device-width: 812px) {
+    .main-pedidos {
+        @include size(100vw, fit-content);
+        flex-wrap: nowrap;
+
+        .pages-pedidos {
+            margin-top: 2rem;
+            font-size: 3em;
+        }
+
+        .table {
+            @include size (50vw, 10vh);
+            font-size: 1em;
+        }
+    
+        iframe {
+            @include size(60vw, 40vh);
+            margin: 1rem; 
+            margin-bottom: 2rem;
+        }   
+    }    
+}
+
+@media only screen and (min-device-width: 360px) and (max-device-width: 470px) {
+    .main-pedidos {
+        @include size(100vw, fit-content);
+        flex-wrap: nowrap;
+
+        .pages-pedidos {
+            margin-top: 2rem;
+            font-size: 3em;
+        }
+
+        .table {
+            @include size (50vw, 15vh);
+            font-size: 0.8em;
+        }
+    
+        iframe {
+            @include size(70vw, 25vh);
+            margin: 1rem; 
+            margin-bottom: 2rem;
+        }   
+    }    
+}
