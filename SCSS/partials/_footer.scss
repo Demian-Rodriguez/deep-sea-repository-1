@@ -3,6 +3,7 @@
     @include size(100vw, fit-content);
     bottom: 0;
     background-image: radial-gradient(circle at 43.84% -20.44%, #8bffff 0, #7dfff9 16.67%, #73f3eb 33.33%, #6cd8d8 50%, #68bdc3 66.67%, #64a7af 83.33%, #61939d 100%);
+    margin-bottom: -5rem;
 
     .footer__nav {
         overflow: hidden;

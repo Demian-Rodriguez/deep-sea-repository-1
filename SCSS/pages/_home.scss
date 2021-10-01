@@ -75,7 +75,7 @@
         flex-wrap: nowrap;
         
         .container-new {
-            @include size(60vw, 25vh);
+            @include size(70vw, 25vh);
 
             img {
                 @include size(fit-content, 15vh);
@@ -96,7 +96,7 @@
         }
 
         .top-sellers {
-            @include size(50vw, 15vh);
+            @include size(fit-content, fit-content);
             padding: 0;
         }
 
@@ -104,7 +104,7 @@
             @include size(40vw, 35vh);
 
             .d-block {
-                @include size(20vw, 20vh); 
+                @include size(25vw, 25vh); 
             }
         }
 
@@ -149,10 +149,10 @@
         }
 
         .carousel {
-            @include size(50vw, 22vh);
+            @include size(50vw, 25vh);
 
             .d-block {
-                @include size(20vw, 13vh);
+                @include size(fit-content, 16vh);
             }
         }
 
@@ -213,7 +213,7 @@
             @include size(60vw, 20vh);
 
             .d-block {
-                @include size(20vw, 10vh);
+                @include size(fit-content, 10vh);
             }
 
             h2 {

@@ -10,7 +10,7 @@
 a {
   text-decoration: none; }
 
-h2 {
+h1 {
   font-size: 2em; }
 
 .pages {
@@ -120,7 +120,8 @@ a:link, a:visited {
   width: 100vw;
   height: fit-content;
   bottom: 0;
-  background-image: radial-gradient(circle at 43.84% -20.44%, #8bffff 0, #7dfff9 16.67%, #73f3eb 33.33%, #6cd8d8 50%, #68bdc3 66.67%, #64a7af 83.33%, #61939d 100%); }
+  background-image: radial-gradient(circle at 43.84% -20.44%, #8bffff 0, #7dfff9 16.67%, #73f3eb 33.33%, #6cd8d8 50%, #68bdc3 66.67%, #64a7af 83.33%, #61939d 100%);
+  margin-bottom: -5rem; }
   .footer .footer__nav {
     overflow: hidden;
     padding: 0.5rem;
@@ -233,7 +234,7 @@ a:link, a:visited {
   .main {
     flex-wrap: nowrap; }
     .main .container-new {
-      width: 60vw;
+      width: 70vw;
       height: 25vh; }
       .main .container-new img {
         width: fit-content;
@@ -249,15 +250,15 @@ a:link, a:visited {
       width: 50vw;
       height: 15vh; }
     .main .top-sellers {
-      width: 50vw;
-      height: 15vh;
+      width: fit-content;
+      height: fit-content;
       padding: 0; }
     .main .carousel {
       width: 40vw;
       height: 35vh; }
       .main .carousel .d-block {
-        width: 20vw;
-        height: 20vh; }
+        width: 25vw;
+        height: 25vh; }
     .main h2 {
       font-size: 1.5em; } }
 
@@ -290,10 +291,10 @@ a:link, a:visited {
         height: 15vh; }
     .main .carousel {
       width: 50vw;
-      height: 22vh; }
+      height: 25vh; }
       .main .carousel .d-block {
-        width: 20vw;
-        height: 13vh; }
+        width: fit-content;
+        height: 16vh; }
     .main h2 {
       font-size: 1.2em; } }
 
@@ -335,7 +336,7 @@ a:link, a:visited {
       width: 60vw;
       height: 20vh; }
       .main .carousel .d-block {
-        width: 20vw;
+        width: fit-content;
         height: 10vh; }
       .main .carousel h2 {
         font-size: 1em;
@@ -442,7 +443,7 @@ a:link, a:visited {
     width: 100vw;
     height: fit-content;
     flex-wrap: nowrap; }
-    .main-comics h2 {
+    .main-comics .main-comics__titulo {
       font-size: 3em;
       padding-top: 0rem;
       margin-top: 0rem; }
@@ -579,7 +580,7 @@ a:link, a:visited {
     width: 100vw;
     height: fit-content;
     flex-wrap: nowrap; }
-    .main-contacto h2 {
+    .main-contacto .main-contacto__titulo {
       font-size: 3em; }
     .main-contacto .contacto {
       width: fit-content;
@@ -707,7 +708,7 @@ a:link, a:visited {
     width: 100vw;
     height: fit-content;
     flex-wrap: nowrap; }
-    .main-manga h2 {
+    .main-manga .main-manga__titulo {
       font-size: 3em;
       padding-top: 0rem;
       margin-top: 0rem; }
@@ -745,7 +746,7 @@ a:link, a:visited {
   align-items: center;
   justify-content: center;
   flex-wrap: nowrap; }
-  .main-pedidos .pages-pedidos {
+  .main-pedidos .main-pedidos__titulo {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -778,7 +779,7 @@ a:link, a:visited {
     width: 100vw;
     height: fit-content;
     flex-wrap: nowrap; }
-    .main-pedidos .pages-pedidos {
+    .main-pedidos .main-pedidos__titulo {
       margin-top: 2rem;
       font-size: 3em; }
     .main-pedidos .table {
@@ -796,7 +797,7 @@ a:link, a:visited {
     width: 100vw;
     height: fit-content;
     flex-wrap: nowrap; }
-    .main-pedidos .pages-pedidos {
+    .main-pedidos .main-pedidos__titulo {
       margin-top: 2rem;
       font-size: 3em; }
     .main-pedidos .table {
@@ -814,7 +815,7 @@ a:link, a:visited {
     width: 100vw;
     height: fit-content;
     flex-wrap: nowrap; }
-    .main-pedidos .pages-pedidos {
+    .main-pedidos .main-pedidos__titulo {
       margin-top: 2rem;
       font-size: 3em; }
     .main-pedidos .table {

@@ -4,7 +4,7 @@
     @include size(100vw, fit-content);
     @include flex(column, center, center, nowrap);
 
-    .pages-pedidos {
+    .main-pedidos__titulo {
         @include flex(column, center, center,wrap);
         @include size(fit-content, fit-content);
         font-size: 4em;
@@ -38,7 +38,7 @@
         @include size(100vw, fit-content);
         flex-wrap: nowrap;
 
-        .pages-pedidos {
+        .main-pedidos__titulo {
             margin-top: 2rem;
             font-size: 3em;
         }
@@ -61,7 +61,7 @@
         @include size(100vw, fit-content);
         flex-wrap: nowrap;
 
-        .pages-pedidos {
+        .main-pedidos__titulo {
             margin-top: 2rem;
             font-size: 3em;
         }
@@ -84,7 +84,7 @@
         @include size(100vw, fit-content);
         flex-wrap: nowrap;
 
-        .pages-pedidos {
+        .main-pedidos__titulo {
             margin-top: 2rem;
             font-size: 3em;
         }
