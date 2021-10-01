@@ -4,6 +4,15 @@
     @include flex(column, center, center, wrap);
     background-color: $main-color; 
 
+    .main-comics__titulo {
+        @include flex(column, center, center,wrap);
+        @include size(fit-content, fit-content);
+        @include font($my-font, 5em, bolder);
+        text-align: center;
+        border-bottom: 3px solid cadetblue;
+        margin-top: 3rem;
+    }
+
     .fondo-listas {
         display: flex;
         margin-left: 5rem;

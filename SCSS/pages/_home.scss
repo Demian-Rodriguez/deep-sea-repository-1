@@ -3,6 +3,15 @@
     background-color: $main-color;
     @include size(100vw, auto);
     @include flex(column, center, center,wrap);
+
+    .main__titulo {
+        @include flex(column, center, center,wrap);
+        @include size(fit-content, fit-content);
+        @include font($my-font, 5em, bolder);
+        text-align: center;
+        border-bottom: 3px solid cadetblue;
+        margin-top: 3rem;
+    }
     
     .container-new {
         @include size(50vw, 30vh);
@@ -118,6 +127,12 @@
     .main {
         flex-wrap: nowrap;
         
+        .main__titulo {
+            font-size: 3em;
+            text-align: center;
+            margin-top: 3rem;
+        }
+
         .container-new {
             @include size(80vw, 20vh);
 
@@ -166,6 +181,12 @@
     .main {
         flex-wrap: nowrap;
         
+        .main__titulo {
+            font-size: 2em;
+            text-align: center;
+            margin-top: 3rem;
+        }
+
         .container-new {
             @include size(80vw, 20vh);
 

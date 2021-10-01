@@ -7,10 +7,10 @@
     .main-pedidos__titulo {
         @include flex(column, center, center,wrap);
         @include size(fit-content, fit-content);
-        font-size: 4em;
+        @include font($my-font, 5em, bolder);
         text-align: center;
         border-bottom: 3px solid cadetblue;
-        margin-top: 9rem
+        margin-top: 3rem;
     }
 
     .table {

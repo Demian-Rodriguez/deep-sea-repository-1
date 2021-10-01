@@ -171,6 +171,20 @@ a:link, a:visited {
   align-items: center;
   justify-content: center;
   flex-wrap: wrap; }
+  .main .main__titulo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: fit-content;
+    height: fit-content;
+    font-family: "Amatic SC", cursive;
+    font-size: 5em;
+    font-weight: bolder;
+    text-align: center;
+    border-bottom: 3px solid cadetblue;
+    margin-top: 3rem; }
   .main .container-new {
     width: 50vw;
     height: 30vh;
@@ -265,6 +279,10 @@ a:link, a:visited {
 @media only screen and (min-device-width: 475px) and (max-device-width: 812px) {
   .main {
     flex-wrap: nowrap; }
+    .main .main__titulo {
+      font-size: 3em;
+      text-align: center;
+      margin-top: 3rem; }
     .main .container-new {
       width: 80vw;
       height: 20vh; }
@@ -301,6 +319,10 @@ a:link, a:visited {
 @media only screen and (min-device-width: 360px) and (max-device-width: 470px) {
   .main {
     flex-wrap: nowrap; }
+    .main .main__titulo {
+      font-size: 2em;
+      text-align: center;
+      margin-top: 3rem; }
     .main .container-new {
       width: 80vw;
       height: 20vh; }
@@ -352,6 +374,20 @@ a:link, a:visited {
   justify-content: center;
   flex-wrap: wrap;
   background-color: darkslategrey; }
+  .main-comics .main-comics__titulo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: fit-content;
+    height: fit-content;
+    font-family: "Amatic SC", cursive;
+    font-size: 5em;
+    font-weight: bolder;
+    text-align: center;
+    border-bottom: 3px solid cadetblue;
+    margin-top: 3rem; }
   .main-comics .fondo-listas {
     display: flex;
     margin-left: 5rem; }
@@ -482,6 +518,20 @@ a:link, a:visited {
   justify-content: center;
   flex-wrap: nowrap;
   background-color: darkslategrey; }
+  .main-contacto .main-contacto__titulo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: fit-content;
+    height: fit-content;
+    font-family: "Amatic SC", cursive;
+    font-size: 5em;
+    font-weight: bolder;
+    text-align: center;
+    border-bottom: 3px solid cadetblue;
+    margin-top: 3rem; }
   .main-contacto .contacto {
     margin: 3rem;
     padding: 2rem;
@@ -616,6 +666,20 @@ a:link, a:visited {
   justify-content: center;
   flex-wrap: wrap;
   background-color: darkslategrey; }
+  .main-manga .main-manga__titulo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: fit-content;
+    height: fit-content;
+    font-family: "Amatic SC", cursive;
+    font-size: 5em;
+    font-weight: bolder;
+    text-align: center;
+    border-bottom: 3px solid cadetblue;
+    margin-top: 3rem; }
   .main-manga .fondo-listas {
     display: flex;
     margin-left: 5rem; }
@@ -754,10 +818,12 @@ a:link, a:visited {
     flex-wrap: wrap;
     width: fit-content;
     height: fit-content;
-    font-size: 4em;
+    font-family: "Amatic SC", cursive;
+    font-size: 5em;
+    font-weight: bolder;
     text-align: center;
     border-bottom: 3px solid cadetblue;
-    margin-top: 9rem; }
+    margin-top: 3rem; }
   .main-pedidos .table {
     font-family: sans-serif;
     font-size: 2em;
