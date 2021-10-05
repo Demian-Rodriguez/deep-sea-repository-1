@@ -98,6 +98,10 @@ a:link, a:visited {
             .menu__item {
                 margin: 0.5rem;
             }
+
+            & > .menu__item:hover {
+                padding: 0.3rem 0.3rem;
+            } 
         }
     }
 }
@@ -122,6 +126,10 @@ a:link, a:visited {
             .menu__item {
                 margin: 0.2rem;
             }
+
+            & > .menu__item:hover {
+                padding: 0.3rem 0.3rem;
+            }    
         }
     }
 }

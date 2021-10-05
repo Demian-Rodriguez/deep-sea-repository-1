@@ -97,7 +97,9 @@ a:link, a:visited {
       margin-left: 0;
       padding-left: 0; }
       .navegador .menu .menu__item {
-        margin: 0.5rem; } }
+        margin: 0.5rem; }
+      .navegador .menu > .menu__item:hover {
+        padding: 0.3rem 0.3rem; } }
 
 @media only screen and (min-device-width: 360px) and (max-device-width: 470px) {
   .navegador {
@@ -113,7 +115,9 @@ a:link, a:visited {
       margin-left: 0;
       padding-left: 0; }
       .navegador .menu .menu__item {
-        margin: 0.2rem; } }
+        margin: 0.2rem; }
+      .navegador .menu > .menu__item:hover {
+        padding: 0.3rem 0.3rem; } }
 
 /*Footer*/
 .footer {
