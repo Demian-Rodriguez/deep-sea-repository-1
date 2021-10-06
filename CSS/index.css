@@ -897,3 +897,36 @@ a:link, a:visited {
       height: 25vh;
       margin: 1rem;
       margin-bottom: 2rem; } }
+
+.main-error {
+  width: 100vw;
+  height: fit-content;
+  background: #00E7DC;
+  margin: 0;
+  padding: 0; }
+  .main-error .main-error__titulo {
+    font-family: "Amatic SC", cursive;
+    font-size: 5em;
+    font-weight: bolder;
+    color: #fff;
+    text-align: center;
+    padding: 2rem 0 0;
+    opacity: 2; }
+  .main-error svg {
+    left: 0;
+    height: 100%;
+    width: 100%; }
+
+@media only screen and (min-device-width: 475px) and (max-device-width: 812px) {
+  .main-error {
+    width: 100vw;
+    height: fit-content; }
+    .main-error .main-error__titulo {
+      font-size: 4em; } }
+
+@media only screen and (min-device-width: 360px) and (max-device-width: 470px) {
+  .main-error {
+    width: 100vw;
+    height: fit-content; }
+    .main-error .main-error__titulo {
+      font-size: 3em; } }
