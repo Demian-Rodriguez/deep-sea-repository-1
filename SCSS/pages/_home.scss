@@ -134,7 +134,8 @@
         }
 
         .container-new {
-            @include size(80vw, 20vh);
+            @include size(80vw, fit-content);
+            @include border (0.5rem, 0.5rem);
 
             img {
                 @include size(fit-content, 10vh);
@@ -188,7 +189,8 @@
         }
 
         .container-new {
-            @include size(80vw, 20vh);
+            @include size(80vw, fit-content);
+            @include border (0rem, 0rem);
 
             img {
                 @include size(fit-content, 8vh);
